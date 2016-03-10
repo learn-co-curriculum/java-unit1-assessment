@@ -3,12 +3,13 @@
 ## Assumptions
 
   * Basic Java
+  * Generics in Java
   * Interface in Java
   * List Class
   * ArrayList
   * LinkedList
-  * Selection Sort
   * Tests
+
 
 ???
 
@@ -26,7 +27,7 @@
 (X) `public double methoda();`
 ( ) `double public methoda();`
 
-?:
+?: Please read the following code. What is the output?
 
 ```
 public void foo( boolean a, boolean b)
@@ -53,39 +54,109 @@ public void foo( boolean a, boolean b)
 }
 ```
 
-(X) license file
-( ) spec file
-( ) lib file
+( ) If `a` is true and `b` is true then the output is "A && B"
+( ) If `a` is true and `b` is false then the output is "notB"
+(X) If `a` is false and `b` is true then the output is "ELSE"
+( ) If `a` is false and `b` is false then the output is "ELSE"
 
-?: The contributing file gives guidelines for students on how to 
+?: Can a Java Interface ever contain method definitions?
 
-( ) solve a lab
-(X) raise an issue
-( ) edit the curriculum
+(X) No
+( ) Yes
+( ) Sometimes
 
-?: In a .learn file what are the four categories that you need to add tags for?
+?: When a class implements an interface, what must it do? 
 
-( ) languages, frameworks, resources, type
-( ) tags, frameworks, unit, track
-( ) frameworks, unit, track, resources
-(X) tags, language, resources, type
+( ) It must redefine each constant from the interface
+(X) It must declare and provide a method definition for each method in the interface.
+( ) It must declare a variable for each constant in the interface.
+( ) It must include a private method for each method in the interface.
 
-?: When writing a lesson that has objectives already defined, what is the first thing you do? 
+?: Is the following a correct way to start out a class definition:
 
-( ) write your content in the Master branch
-(X) make a new branch off of Master and write your content in there
+```
+public class MyClass implements MyInterface
+```
 
-?: The contributing file gives guidelines for students on how to 
+(X) Yes
+( ) No
 
-( ) solve a lab
-(X) raise an issue
+?: What is the output of this program?
 
-?: When you’re finished writing a lesson, what do you do?
+```java
+ import java.util.*;
+    public class genericstack <E> {
+        Stack <E> stk = new Stack <E>();
+	public void push(E obj) {
+            stk.push(obj);
+	}
+	public E pop() {
+            E obj = stk.pop();
+	    return obj;
+	}
+    }
+    class Output {
+        public static void main(String args[]) {
+            genericstack <String> gs = new genericstack<String>();
+            gs.push("Hello");
+            System.out.print(gs.pop() + " ");
+            genericstack <Integer> gs = new genericstack<Integer>();
+            gs.push(36);
+            System.out.println(gs.pop());
+        }
+    }
+```
 
-(X) make a Pull Request to the master branch
-( ) email us at Flatiron and let us know
-( ) raise an issue in the repository letting us know it’s ready for review
+( ) Error
+( ) Hello
+( ) 36
+(X) Hello 36
 
+?: Declare and construct an ArrayList with an initial capacity of 20 references to Object.
+
+( ) `Object list(20) = new ArrayList() ;`
+( ) `ArrayList list[20] = new ArrayList() ;`
+( ) `ArrayList[Object] list = new ArrayList(20) ;`
+(X) `ArrayList<Object> list = new ArrayList<Object>(20) ;`
+
+?: Take a look at the following code. What is the capacity of `list` and what is it's size?
+
+```
+ArrayList<String> list = new ArrayList<String>(10) ;
+list.add( "Ann" );
+list.add( "Bob" );
+list.add( "Eve" );
+```
+
+( ) Capacity: 3, Size: 3
+( ) Capacity: 3, Size: 10
+(X) Capacity: 10, Size: 3
+( ) Capacity: 10, Size: 10
+
+?: Which is faster?
+
+Option 1:
+
+```
+ArrayList<String> list = new ArrayList<String>(10) ;
+list.add( "Ann" );
+list.add( "Bob" );
+list.add( "Eve" );
+list.get(1);
+```
+
+Option 2:
+
+```
+LinkedList<String> list = new LinkedList<String>(10) ;
+list.add( "Ann" );
+list.add( "Bob" );
+list.add( "Eve" );
+list.get(1);
+```
+
+(X): Option 1
+( ): Option 2
 
 ???
 
