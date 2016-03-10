@@ -155,8 +155,8 @@ list.add( "Eve" );
 list.get(1);
 ```
 
-(X): Option 1
-( ): Option 2
+(X) Option 1
+( ) Option 2
 
 ???
 
