@@ -1,14 +1,17 @@
 # Unit 1 Assessment
 
+Throughout this course we assume that students understand a few basic Java concepts. Just like other programmers, we believe that well documented assumptions are incredibly important. So, below is roughly what we expect students to know before going through this unit. We've included links to outside resources that we like to learn those individual concepts. After the list of assumptions is a quick quiz. This quiz *should be easy*. If you get any of them wrong, or find this quiz hard please refer to the resources provide to get a quick refresher on any of the topics.
+
 ## Assumptions
 
-  * Basic Java
-  * Generics in Java
-  * Interface in Java
-  * List Class
-  * ArrayList
-  * LinkedList
-  * Tests
+  * [Basic Java](http://www.amazon.com/Head-First-Java-2nd-Edition/dp/0596009208)
+  * [Generics in Java](http://howtodoinjava.com/core-java/generics/complete-java-generics-tutorial/)
+  * [Interface in Java](http://www.tutorialspoint.com/java/java_interfaces.htm)
+  * [Collections Framework](http://www.wideskills.com/java-tutorial/java-collections-framework)
+  * [ArrayList](http://www.wideskills.com/java-tutorial/java-collections-framework)
+  * [LinkedList](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Linked%20Lists/linked%20lists.html) | [LinkedList Resource 2](http://beginnersbook.com/2013/12/difference-between-arraylist-and-linkedlist-in-java/)
+  * [JUnit Tests](http://www.vogella.com/tutorials/JUnit/article.html)
+  * [Hamcrest Matchers](http://edgibbs.com/junit-4-with-hamcrest/) | [Hamcrest Resource 2](https://springframework.guru/unit-testing-junit-part-3-hamcrest-matchers/)
 
 
 ???
@@ -158,8 +161,25 @@ list.get(1);
 (X) Option 1
 ( ) Option 2
 
+?: Which of the following method of TestCase class sets up the test, for example, creating test data?
+
+( ) `void setTestName()`
+(X) `void setUp()`
+( ) `void setUpFixture()`
+( ) `void setTestCase()`
+
+?: Given the following code, which Hamcrest matcher will pass?
+
+```
+ List<Integer> list = Arrays.asList(5, 2, 4);
+```
+
+( ) `assertThat(list, hasSize(3));`
+( ) `assertThat(list, contains(5, 4, 2))`
+( ) `assertThat(list, containsInAnyOrder(2, 4));`
+( ) All of the above
+( ) The 1st and 2nd option
+(X) The 1st and 3rd option
+
+
 ???
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/quiz' title='Curriculum Overview'>Curriculum Overview</a> on Learn.co and start learning to code for free.</p>
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/quiz'>Quiz</a> on Learn.co and start learning to code for free.</p>
