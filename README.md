@@ -1,6 +1,6 @@
 # Unit 1 Assessment
 
-Throughout this course we assume that students understand a few basic Java concepts. Just like other programmers, we believe that well documented assumptions are incredibly important. So, below is roughly what we expect students to know before going through this unit. We've included links to outside resources that we like to learn those individual concepts. After the list of assumptions is a quick quiz. This quiz *should be easy*. If you get any of them wrong, or find this quiz hard please refer to the resources provide to get a quick refresher on any of the topics.
+Throughout this course we assume that students understand a few basic Java concepts. Just like other programmers, we believe that well documented assumptions are incredibly important. Below is roughly what we expect students to know before going through this unit. We've included links to outside resources that we like to learn those individual concepts. After the list of assumptions is a quick quiz. This quiz *should be easy*. If you get any of them wrong or find this quiz hard, please refer to the resources provided to get a quick refresher on any of the topics.
 
 ## Assumptions
 
@@ -183,3 +183,5 @@ list.get(1);
 
 
 ???
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/java-unit1-assessment'>Java Unit1 Assessment</a> on Learn.co and start learning to code for free.</p>
