@@ -103,9 +103,9 @@ public class MyClass implements MyInterface
             genericstack <String> gs = new genericstack<String>();
             gs.push("Hello");
             System.out.print(gs.pop() + " ");
-            genericstack <Integer> gs = new genericstack<Integer>();
-            gs.push(36);
-            System.out.println(gs.pop());
+            genericstack <Integer> gs2 = new genericstack<Integer>();
+            gs2.push(36);
+            System.out.println(gs2.pop());
         }
     }
 ```
