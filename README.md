@@ -34,26 +34,26 @@ Throughout this course we assume that students understand a few basic Java conce
 
 ```
 public void foo( boolean a, boolean b)
-{ 
-    if( a ) 
+{
+    if( a )
     {
         System.out.println("A"); /* Line 5 */
-    } 
+    }
     else if(a && b) /* Line 7 */
-    { 
-        System.out.println( "A && B"); 
-    } 
+    {
+        System.out.println( "A && B");
+    }
     else /* Line 11 */
-    { 
-        if ( !b ) 
+    {
+        if ( !b )
         {
             System.out.println( "notB") ;
-        } 
-        else 
+        }
+        else
         {
-            System.out.println( "ELSE" ) ; 
-        } 
-    } 
+            System.out.println( "ELSE" ) ;
+        }
+    }
 }
 ```
 
@@ -64,11 +64,11 @@ public void foo( boolean a, boolean b)
 
 ?: Can a Java Interface ever contain method definitions?
 
-(X) No
-( ) Yes
+( ) No
+(X) Yes
 ( ) Sometimes
 
-?: When a class implements an interface, what must it do? 
+?: When a class implements an interface, what must it do?
 
 ( ) It must redefine each constant from the interface
 (X) It must declare and provide a method definition for each method in the interface.
