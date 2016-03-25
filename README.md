@@ -141,21 +141,17 @@ list.add( "Eve" );
 Option 1:
 
 ```
-ArrayList<String> list = new ArrayList<String>(10) ;
-list.add( "Ann" );
-list.add( "Bob" );
-list.add( "Eve" );
-list.get(1);
+// `arrayList` is an instance of ArrayList<String>
+// with elements `"Ann"`, `"Bob"`, `"Eve"`
+arrayList.get(1);
 ```
 
 Option 2:
 
 ```
-LinkedList<String> list = new LinkedList<String>(10) ;
-list.add( "Ann" );
-list.add( "Bob" );
-list.add( "Eve" );
-list.get(1);
+// `linkedList` is an instance of LinkedList<String>
+// with elements `"Ann"`, `"Bob"`, `"Eve"`
+linkedList.get(1);
 ```
 
 (X) Option 1
